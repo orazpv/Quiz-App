@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link href="QuizStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="QuizArea">
+        <div id="QstArea">
+            <h3 id="qstTitle"></h3>
+            <h5 id="qst"></h5>
+            <div id="result"></div>
+            <input class="hide" type="radio" name="opt" id="opt0" value="0" checked />
+            <p id="optArea">
+
+            </p>
+        </div>
+        <button id="submit" onclick="submitAns();">Submit</button>
+        <button id="nextQst" onclick="NextQst();">Next</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
