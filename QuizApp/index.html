@@ -2,22 +2,75 @@
 <html>
 <head>
     <title>Quiz App</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="QuizStyle.css" rel="stylesheet" />
 </head>
-<body>
-    <div id="QuizArea">
-        <div id="QstArea">
-            <h3 id="qstTitle"></h3>
-            <h5 id="qst"></h5>
-            <div id="result"></div>
-            <input class="hide" type="radio" name="opt" id="opt0" value="0" checked />
-            <p id="optArea">
+<body style="background-color:#0094ff">
+    <p></p>
+    <div class="panel panel-warning center-block" style="width:500px">
+       <div class="panel-heading">
+          <h1 class="lead">
+             Quiz Application
+          </h1>
+       </div>
+       <div class="panel-body">
+           <div id="instructions" class="form-control box" style="width: 440px; height: 80px">
+               <ul>
+                   <li>This quiz is not timed</li>
+                   <li>You have 5 questions</li>
+                   <li>Click Start to begin</li>
+               </ul>
+           </div>
+           <p></p>
+           <div id="QuizArea" class="container hide">
+               <div id="QstArea" class="box">
+                   <h2 id="qstTitle" class="form-control" style="width: 440px"></h2>
+                   
+                   <p id="qst" class="form-control" style="width: 440px;height:50px"></p>
+                   
+                   <p id="result"></p>
+                   <input class="hide" type="radio" name="opt" id="opt0" value="0" checked />
+                   <p id="optArea" class="form-control" style="width: 440px; height: 110px">
 
-            </p>
-        </div>
-        <button id="submit" onclick="submitAns();">Submit</button>
-        <button id="nextQst" onclick="NextQst();">Next</button>
+                   </p>
+               </div>
+           </div>
+       <div class="panel-footer">
+           <div id="submitNext" class="hide">
+               <button class="btn btn-success" id="submit" onclick="submitAns();">Submit</button>
+               <button class="btn btn-warning" id="nextQst" onclick="NextQst();">Next</button>
+           </div>
+           <button class="btn btn-warning" id="startup" onclick="Startup();">Start</button>
+       </div>
     </div>
+  </div>  
+
+        <!--The question Image-->
+    <img id="qstimg" class="form-control hide" src="" style="width: 150px; height: 150px; position:absolute;top:150px;left:910px;" />
+   
+    <!--Alert dialog box-->
+    <a id="ShowAlert" href="#modal-container-1" role="button" class="btn hide" data-toggle="modal">To Do App (Array)</a>
+    <div class="modal fade" id="modal-container-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        
+                    </h4>
+                </div>
+                <div class="modal-body" id="AlertMsg">
+
+                </div>
+                <div class="modal-footer">
+                    Thanks for using my App
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

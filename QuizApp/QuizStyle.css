@@ -2,10 +2,197 @@
     display:none;
 }
 
-.lock {
-    display:none;
+.centered {  
+  position:fixed;
+  z-index: 100;  
+  top:50%;  
+  left:50%;  
+  margin:-100px 0 0 -100px;  
+  width:200px;  
+  height:200px;  
+}  
+
+.qst{
+    height:100px;
+    width:200px;
+    background-color:#f5d9d9
 }
 
-.Unlock {
-    ;
+
+.animate
+{
+    left:0px;
+    top:0px;
+    position:relative;
+    //opacity:0.8;
+
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name:flyin;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+    /* Standard syntax */
+    animation-name:flyin;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-play-state:running;
+}
+
+@-webkit-keyframes flyin
+{
+    0%   {left:300px; top:300px;}
+    25%  {left:150px; top:150px;}
+    50%  {left:100px; top:100px;}
+    75%  {left:50px; top:50px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes flyin
+{
+    0%   {left:300px; top:-300px;}
+    25%  {left:150px; top:-150px;}
+    50%  {left:100px; top:-100px;}
+    75%  {left:50px; top:-50px;}
+    100% {left:0px; top:0px;}
+}
+
+.animate2
+{
+    left:0px;
+    top:0px;
+    position:relative;
+    //display:normal;
+    //opacity:0.8;
+
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name:flyin2;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+    /* Standard syntax */
+    animation-name:flyin2;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-play-state:running;
+}
+@-webkit-keyframes flyin2
+{
+    0%   {right:300px; top:300px;}
+    25%  {right:150px; top:150px;}
+    50%  {right:100px; top:100px;}
+    75%  {right:50px; top:50px;}
+    100% {right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes flyin2
+{
+    0%   {right:300px; top:300px;}
+    25%  {right:150px; top:150px;}
+    50%  {right:100px; top:100px;}
+    75%  {right:50px; top:50px;}
+    100% {right:0px; top:0px;}
+}
+
+.animate3
+{
+    left:0px;
+    top:0px;
+    position:relative;
+    //display:normal;
+    //opacity:0.8;
+
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name:flyin3;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+    /* Standard syntax */
+    animation-name:flyin3;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-play-state:running;
+}
+@-webkit-keyframes flyin3
+{
+    0%   {right:-300px; top:300px;}
+    25%  {right:-150px; top:150px;}
+    50%  {right:-100px; top:100px;}
+    75%  {right:-50px; top:50px;}
+    100% {right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes flyin3
+{
+    0%   {right:-300px; top:300px;}
+    25%  {right:-150px; top:150px;}
+    50%  {right:-100px; top:100px;}
+    75%  {right:-50px; top:50px;}
+    100% {right:0px; top:0px;}
+}
+
+.animate4
+{
+    left:290px;
+    top:0px;
+    position:relative;
+    height:150px;
+    width:150px;
+    //display:normal;
+    //opacity:0.8;
+
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name:flyin4;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+    /* Standard syntax */
+    animation-name:flyin4;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-play-state:running;
+}
+@-webkit-keyframes flyin4
+{
+    0%   {left:-300px; top:300px;}
+    25%  {left:-150px; top:150px;}
+    50%  {left:-100px; top:100px;}
+    75%  {left:-50px; top:50px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes flyin4
+{
+    0%   {left:-300px; top:300px;}
+    25%  {left:-150px; top:150px;}
+    50%  {left:0px; top:100px;}
+    75%  {left:550px; top:50px;}
+    100% {left:910px; top:0px;}
 }
